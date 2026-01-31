@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Dastak | Creative Agency</title>
+
+    <meta name="description" content="I'm Digital Dastak, a passionate UI/UX designer armed with creativity and a love for problem-solving. Specialized in Web Dev, 3D Animation, and Branding.">
+
+    <meta name="keywords" content="Digital Dastak, UI/UX Designer, Creative Agency, 3D Animation, Portfolio">
+
+    <link rel="icon" type="image/png" href="artwork/favicon.png">
+    <meta property="og:title" content="Digital Dastak | Creative Agency">
+    <meta property="og:description" content="A passionate UI/UX designer and creative problem solver. Explore my portfolio.">
+    <meta property="og:image" content="your-preview-image.jpg">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="nav-container">
+            <div class="logo-wrapper">
+                <div class="logo-circle">D</div>
+                <div class="logo-text">
+                    <span class="brand-top">DIGITAL</span>
+                    <span class="brand-bottom">DASTAK</span>
+                </div>
+            </div>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <nav class="navbar" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item dropdown" id="workDropdown">
+                        <a href="javascript:void(0)" class="nav-link drop-trigger">Work <span class="arrow">▼</span></a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Website Development</a></li>
+                            <li><a href="#">Logo Design</a></li>
+                            <li><a href="#">Branding</a></li>
+                            <li><a href="#">2D/3D Animation</a></li>
+                            <li><a href="#">Art & Illustration</a></li>
+                            <li><a href="#">Mobile Apps</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
+                    <li><a href="#" class="nav-link">FAQ</a></li>
+                    <li class="mobile-cta-item"><a href="https://wa.me/+923490786313?text=⚡%20DIGITAL%20DASTAK%20⚡%0A%0AHello!%20👋%0APlease%20guide%20me%20about%20your%20services.%20%F0%9F%92%BC%0A%0A---%20✨%20---" class="btn-talk">LET'S TALK</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-action">
+                <a href="#" class="btn-talk">
+                    <span class="btn-arrow">→</span> LET'S TALK
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h4 class="im-heading">I'm</h4>
+                <h1 class="main-title">Digital Dastak</h1>
+                <p class="description">
+                    We work across development, animation, branding, and art. Whether it's building a site, 
+                    drawing logos, or creating with care. No extra noise, no focus, just solid, creative 
+                    work that fits what you need.
+                </p>
+                
+                <div class="typing-wrapper">
+                    <span id="typing-text"></span>
+                    <div class="underline-animation"></div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="glow-bg"></div>
+                <img src="artwork/character.png" alt="Digital Dastak Character" class="animated-character">
+            </div>
+        </div>
+    </section>
+
+    <div class="skills-ticker-wrapper">
+    <div class="skills-ticker">
+        <div class="ticker-item">Prototyping</div> <span class="sparkle">✦</span>
+        <div class="ticker-item">User Testing</div> <span class="sparkle">✦</span>
+        <div class="ticker-item">Design Systems</div> <span class="sparkle">✦</span>
+        <div class="ticker-item">Graphic Design</div> <span class="sparkle">✦</span>
+        <div class="ticker-item">Web Development</div> <span class="sparkle">✦</span>
+        <div class="ticker-item">Mobile Development</div> <span class="sparkle">✦</span>
+        
+        <div class="ticker-item">Prototyping</div> <span class="sparkle">✦</span>
+        <div class="ticker-item">User Testing</div> <span class="sparkle">✦</span>
+        <div class="ticker-item">Design Systems</div> <span class="sparkle">✦</span>
+        <div class="ticker-item">Graphic Design</div> <span class="sparkle">✦</span>
+        <div class="ticker-item">Web Development</div> <span class="sparkle">✦</span>
+        <div class="ticker-item">Mobile Development</div> <span class="sparkle">✦</span>
+    </div>
+</div>
+
+<section class="featured-section">
+    <div class="featured-container">
+        <h2 class="featured-title">Featured Artwork</h2>
+        <p class="featured-subtitle">Explore our stunning collection</p>
+    </div>
+</section>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<section class="artwork-showcase">
+    <div class="slider-container">
+        
+        <div class="slide-counter-badge">
+            <span id="current-idx">01</span> / <span id="total-idx">16</span>
+        </div>
+
+        <div class="swiper mainArtworkSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><div class="art-card"><img src="artwork/art1.jpg" alt="Art 1"></div></div>
+                <div class="swiper-slide"><div class="art-card"><img src="artwork/art2.jpg" alt="Art 2"></div></div>
+                <div class="swiper-slide"><div class="art-card"><img src="artwork/art3.jpg" alt="Art 3"></div></div>
+                <div class="swiper-slide"><div class="art-card"><img src="artwork/art4.jpg" alt="Art 4"></div></div>
+                <div class="swiper-slide"><div class="art-card"><img src="artwork/art5.jpg" alt="Art 5"></div></div>
+                <div class="swiper-slide"><div class="art-card"><img src="artwork/art6.jpg" alt="Art 6"></div></div>
+                <div class="swiper-slide"><div class="art-card"><img src="artwork/art7.jpg" alt="Art 7"></div></div>
+                <div class="swiper-slide"><div class="art-card"><img src="artwork/art8.jpg" alt="Art 8"></div></div>
+                <div class="swiper-slide"><div class="art-card"><img src="artwork/art9.jpg" alt="Art 9"></div></div>
+                <div class="swiper-slide"><div class="art-card"><img src="artwork/art10.jpg" alt="Art 10"></div></div>
+                <div class="swiper-slide"><div class="art-card"><img src="artwork/art11.jpg" alt="Art 11"></div></div>
+                <div class="swiper-slide"><div class="art-card"><img src="artwork/art12.jpg" alt="Art 12"></div></div>
+                <div class="swiper-slide"><div class="art-card"><img src="artwork/art13.jpg" alt="Art 13"></div></div>
+                <div class="swiper-slide"><div class="art-card"><img src="artwork/art14.jpg" alt="Art 14"></div></div>
+                <div class="swiper-slide"><div class="art-card"><img src="artwork/art15.webp" alt="Art 15"></div></div>
+                <div class="swiper-slide"><div class="art-card"><img src="artwork/art16.jpg" alt="Art 16"></div></div>
+            </div>
+            
+            <div class="swiper-button-next custom-arrow"></div>
+            <div class="swiper-button-prev custom-arrow"></div>
+        </div>
+
+        <div class="bottom-nav-wrapper">
+            <div class="swiper thumbsSlider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="artwork/art1.jpg" class="t-img"></div>
+                    <div class="swiper-slide"><img src="artwork/art2.jpg" class="t-img"></div>
+                    <div class="swiper-slide"><img src="artwork/art3.jpg" class="t-img"></div>
+                    <div class="swiper-slide"><img src="artwork/art4.jpg" class="t-img"></div>
+                    <div class="swiper-slide"><img src="artwork/art5.jpg" class="t-img"></div>
+                    <div class="swiper-slide"><img src="artwork/art6.jpg" class="t-img"></div>
+                    <div class="swiper-slide"><img src="artwork/art7.jpg" class="t-img"></div>
+                    <div class="swiper-slide"><img src="artwork/art8.jpg" class="t-img"></div>
+                    <div class="swiper-slide"><img src="artwork/art9.jpg" class="t-img"></div>
+                    <div class="swiper-slide"><img src="artwork/art10.jpg" class="t-img"></div>
+                    <div class="swiper-slide"><img src="artwork/art11.jpg" class="t-img"></div>
+                    <div class="swiper-slide"><img src="artwork/art12.jpg" class="t-img"></div>
+                    <div class="swiper-slide"><img src="artwork/art13.jpg" class="t-img"></div>
+                    <div class="swiper-slide"><img src="artwork/art14.jpg" class="t-img"></div>
+                    <div class="swiper-slide"><img src="artwork/art15.webp" class="t-img"></div>
+                     <div class="swiper-slide"><img src="artwork/art16.jpg" class="t-img"></div>
+                </div>
+            </div>
+            <div class="swiper-pagination progress-bar-line"></div>
+        </div>
+
+    </div>
+</section>
+
+<section class="digital-services-section">
+    <div id="particles-js"></div>
+
+    <div class="container">
+        <h2 class="main-title">About Our <span>Digital Design Services</span></h2>
+
+        <div class="about-grid">
+            <div class="image-box">
+                <div class="orange-glow">
+                    <img src="artwork/transformer.png" alt="Digital Design Character" class="main-char">
+                </div>
+            </div>
+            <div class="text-box">
+                <p>
+                    Hey there! I'm <span>Digital Dastak</span>, a passionate UI/UX designer armed with creativity and a love for problem-solving. With a blend of design thinking and user-centric approach, I'm on a mission to create digital experiences that leave a lasting impression. So, let's collaborate and bring your vision to life!
+                </p>
+            </div>
+        </div>
+
+        <div class="stats-container" id="stats-section">
+            <div class="stat-item">
+                <h3 class="orange-text counter" data-target="5">0</h3>
+                <p>Years of Design Experience</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="blue-text counter" data-target="200">0</h3>
+                <p>Overall Global Customers</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="purple-text counter" data-target="800">0</h3>
+                <p>Projects I Have Worked on</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<section class="projects-section">
+    <div class="container">
+        <h2 class="projects-title">Recent <span>Web Development Projects</span></h2>
+
+        <div class="projects-grid">
+            <div class="project-card" onclick="openLightbox('images/project1.png', 'Genshin Impact')">
+                <img src="images/project1.jpg" alt="Project 1">
+                <div class="project-overlay">
+                    <div class="project-info">
+                        <h3>Genshin Impact</h3>
+                        <p>Genshin Impact Website</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" onclick="openLightbox('images/project2.png', 'Cupula')">
+                <img src="images/project2.jpg" alt="Project 2">
+                <div class="project-overlay">
+                    <div class="project-info">
+                        <h3>Cupula</h3>
+                        <p>Cupula Website</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" onclick="openLightbox('images/project3.png', 'Designer')">
+                <img src="images/project3.jpg" alt="Project 3">
+                <div class="project-overlay">
+                    <div class="project-info">
+                        <h3>Designer</h3>
+                        <p>Designer Website</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" onclick="openLightbox('images/project4.png', 'Sakura')">
+                <img src="images/project4.jpg" alt="Project 4">
+                <div class="project-overlay">
+                    <div class="project-info">
+                        <h3>Sakura</h3>
+                        <p>Sakura Website</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" onclick="openLightbox('images/project5.webp', 'Restaurant')">
+                <img src="images/project5.jpg" alt="Project 5">
+                <div class="project-overlay">
+                    <div class="project-info">
+                        <h3>Restaurant</h3>
+                        <p>Restaurant Website</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" onclick="openLightbox('images/project6.jpg', 'Architect')">
+                <img src="images/project6.jpg" alt="Project 6">
+                <div class="project-overlay">
+                    <div class="project-info">
+                        <h3>Architect</h3>
+                        <p>Architect Website</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-caption"></div>
+    </div>
+</section>
+
+<section class="portfolio-section">
+    <div class="portfolio-header">
+        <h2 class="section-title">Our <span class="highlight">Portfolio</span></h2>
+    </div>
+
+    <div class="filter-tabs">
+        <button class="tab-btn active" onclick="filterPortfolio('web')">Website Development</button>
+        <button class="tab-btn" onclick="filterPortfolio('logo')">Logo Design</button>
+        <button class="tab-btn" onclick="filterPortfolio('branding')">Branding</button>
+        <button class="tab-btn" onclick="filterPortfolio('anim')">2D/3D Animation</button>
+        <button class="tab-btn" onclick="filterPortfolio('art')">Art & Illustration</button>
+        <button class="tab-btn" onclick="filterPortfolio('app')">Mobile Apps</button>
+    </div>
+
+    <div class="portfolio-grid" id="portfolio-grid">
+        
+        <div class="portfolio-item web"><img src="artwork/web1.jpg" alt="Web"><div class="overlay"><p>Website Development</p></div></div>
+        <div class="portfolio-item web"><img src="artwork/web2.jpg" alt="Web"><div class="overlay"><p>Website Development</p></div></div>
+        <div class="portfolio-item web"><img src="artwork/web3.jpg" alt="Web"><div class="overlay"><p>Website Development</p></div></div>
+        <div class="portfolio-item web"><img src="artwork/web4.jpg" alt="Web"><div class="overlay"><p>Website Development</p></div></div>
+        <div class="portfolio-item web"><img src="artwork/web5.jpg" alt="Web"><div class="overlay"><p>Website Development</p></div></div>
+        <div class="portfolio-item web"><img src="artwork/web6.jpg" alt="Web"><div class="overlay"><p>Website Development</p></div></div>
+
+        <div class="portfolio-item logo"><img src="logo1.jpg" alt="Logo"><div class="overlay"><p>Logo Design</p></div></div>
+        <div class="portfolio-item logo"><img src="logo2.jpg" alt="Logo"><div class="overlay"><p>Logo Design</p></div></div>
+        <div class="portfolio-item logo"><img src="logo3.jpg" alt="Logo"><div class="overlay"><p>Logo Design</p></div></div>
+        <div class="portfolio-item logo"><img src="logo4.jpg" alt="Logo"><div class="overlay"><p>Logo Design</p></div></div>
+        <div class="portfolio-item logo"><img src="logo5.jpg" alt="Logo"><div class="overlay"><p>Logo Design</p></div></div>
+        <div class="portfolio-item logo"><img src="logo6.jpg" alt="Logo"><div class="overlay"><p>Logo Design</p></div></div>
+
+        <div class="portfolio-item branding"><img src="brand1.jpg" alt="Brand"><div class="overlay"><p>Branding</p></div></div>
+        <div class="portfolio-item branding"><img src="brand2.jpg" alt="Brand"><div class="overlay"><p>Branding</p></div></div>
+        <div class="portfolio-item branding"><img src="brand3.jpg" alt="Brand"><div class="overlay"><p>Branding</p></div></div>
+        <div class="portfolio-item branding"><img src="brand4.jpg" alt="Brand"><div class="overlay"><p>Branding</p></div></div>
+        <div class="portfolio-item branding"><img src="brand5.jpg" alt="Brand"><div class="overlay"><p>Branding</p></div></div>
+        <div class="portfolio-item branding"><img src="brand6.jpg" alt="Brand"><div class="overlay"><p>Branding</p></div></div>
+
+       <div class="portfolio-item anim" onclick="toggleVideo(this)">
+    <video class="portfolio-video" playsinline>
+        <source src="your-animation-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="play-hint">▶</div>
+    <div class="overlay">
+        <p>2D/3D Animation (Click to Play)</p>
+    </div>
+</div>
+        <div class="portfolio-item anim" onclick="toggleVideo(this)">
+    <video class="portfolio-video" playsinline>
+        <source src="your-animation-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="play-hint">▶</div>
+    <div class="overlay">
+        <p>2D/3D Animation (Click to Play)</p>
+    </div>
+</div>
+        <div class="portfolio-item anim" onclick="toggleVideo(this)">
+    <video class="portfolio-video" playsinline>
+        <source src="your-animation-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="play-hint">▶</div>
+    <div class="overlay">
+        <p>2D/3D Animation (Click to Play)</p>
+    </div>
+</div>
+        <div class="portfolio-item anim" onclick="toggleVideo(this)">
+    <video class="portfolio-video" playsinline>
+        <source src="your-animation-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="play-hint">▶</div>
+    <div class="overlay">
+        <p>2D/3D Animation (Click to Play)</p>
+    </div>
+</div>
+       <div class="portfolio-item anim" onclick="toggleVideo(this)">
+    <video class="portfolio-video" playsinline>
+        <source src="your-animation-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="play-hint">▶</div>
+    <div class="overlay">
+        <p>2D/3D Animation (Click to Play)</p>
+    </div>
+</div>
+       <div class="portfolio-item anim" onclick="toggleVideo(this)">
+    <video class="portfolio-video" playsinline>
+        <source src="your-animation-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="play-hint">▶</div>
+    <div class="overlay">
+        <p>2D/3D Animation (Click to Play)</p>
+    </div>
+</div>
+
+        <div class="portfolio-item art"><img src="art1.jpg" alt="Art"><div class="overlay"><p>Art & Illustration</p></div></div>
+        <div class="portfolio-item art"><img src="art2.jpg" alt="Art"><div class="overlay"><p>Art & Illustration</p></div></div>
+        <div class="portfolio-item art"><img src="art3.jpg" alt="Art"><div class="overlay"><p>Art & Illustration</p></div></div>
+        <div class="portfolio-item art"><img src="art4.jpg" alt="Art"><div class="overlay"><p>Art & Illustration</p></div></div>
+        <div class="portfolio-item art"><img src="art5.jpg" alt="Art"><div class="overlay"><p>Art & Illustration</p></div></div>
+        <div class="portfolio-item art"><img src="art6.jpg" alt="Art"><div class="overlay"><p>Art & Illustration</p></div></div>
+
+        <div class="portfolio-item app"><img src="app1.jpg" alt="App"><div class="overlay"><p>Mobile Apps</p></div></div>
+        <div class="portfolio-item app"><img src="app2.jpg" alt="App"><div class="overlay"><p>Mobile Apps</p></div></div>
+        <div class="portfolio-item app"><img src="app3.jpg" alt="App"><div class="overlay"><p>Mobile Apps</p></div></div>
+        <div class="portfolio-item app"><img src="app4.jpg" alt="App"><div class="overlay"><p>Mobile Apps</p></div></div>
+        <div class="portfolio-item app"><img src="app5.jpg" alt="App"><div class="overlay"><p>Mobile Apps</p></div></div>
+        <div class="portfolio-item app"><img src="app6.jpg" alt="App"><div class="overlay"><p>Mobile Apps</p></div></div>
+
+    </div>
+</section>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<section class="contact-section">
+    <div class="contact-header" data-aos="fade-up">
+        <h2 class="contact-title">Get in <span>Touch</span></h2>
+        <h3 class="contact-subtitle">Let's Create Something Amazing Together</h3>
+        <p class="contact-desc">Have a project in mind? Want to collaborate? Or just want to say hi? I'd love to hear from you.</p>
+    </div>
+
+    <div class="contact-card" data-aos="zoom-in" data-aos-delay="200">
+        <div class="contact-info">
+            <h4>Get in Touch</h4>
+            <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+            
+            <a href="mailto:info@pfpchroma.com" class="email-link">
+                <i class="fa-solid fa-envelope"></i> info@digitaldastak.com
+            </a>
+
+            <div class="social-grid">
+                <a href="#" class="social-btn"><i class="fa-brands fa-artstation"></i> ArtStation</a>
+                <a href="#" class="social-btn"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <a href="#" class="social-btn"><i class="fa-brands fa-x-twitter"></i> X</a>
+                <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h4>Quick Message</h4>
+            <form>
+                <div class="input-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" placeholder="Your Phone" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <textarea placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit" class="send-btn">
+                    <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-col about-col">
+            <div class="footer-logo">
+                <h2 style="color: #f7931e; font-weight: bold;">DIGITAL<span style="color: white;">DASTAK</span></h2>
+            </div>
+            <p class="footer-text">
+                Crafting creative visuals, UI designs & web experiences that convert. We bring your ideas to life with stunning designs and powerful functionality.
+            </p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Our Services</h4>
+            <ul class="footer-links">
+                <li><a href="#">Website Development</a></li>
+                <li><a href="#">Logo Design</a></li>
+                <li><a href="#">Branding</a></li>
+                <li><a href="#">2D/3D Animation</a></li>
+                <li><a href="#">Art & Illustration</a></li>
+                <li><a href="#">Mobile Apps</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p class="newsletter-text">Subscribe to our newsletter for updates and insights.</p>
+            <form class="footer-newsletter">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer-bottom-container">
+            <p>© 2026 digitaldastak. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-artstation"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://kit.fontawesome.com/your-code-here.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
