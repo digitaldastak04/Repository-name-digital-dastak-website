@@ -330,3 +330,100 @@ function filterPortfolio(category) {
         }
     });
 }
+
+//about script start //
+
+let lastScrollY = window.scrollY;
+const header = document.getElementById("main-header");
+
+// Header Hide/Show on Scroll
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) { // Thoda scroll hone ke baad logic chale
+        if (lastScrollY < window.scrollY) {
+            header.classList.add("header-hidden");
+        } else {
+            header.classList.remove("header-hidden");
+        }
+    }
+    lastScrollY = window.scrollY;
+});
+
+// Randomize stars delay for natural blinking
+document.querySelectorAll('.star').forEach((star, index) => {
+    star.style.animationDelay = `${index * 0.4}s`;
+});
+
+//card //
+// Header Scroll Logic);
+
+window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll > lastScroll && currentScroll > 100) {
+        header.classList.add("header-hidden");
+    } else {
+        header.classList.remove("header-hidden");
+    }
+    lastScroll = currentScroll;
+});
+
+// Stars Timing Randomizer
+document.querySelectorAll('.star').forEach((star, i) => {
+    star.style.animationDelay = `${(i % 4) * 0.3}s`;
+});
+
+// card //
+// Mobile Click Flip Support
+document.querySelectorAll('.skill-card').forEach(card => {
+    card.addEventListener('click', function() {
+        if (window.innerWidth <= 768) {
+            const inner = this.querySelector('.card-inner');
+            // Toggle rotation manually for touch screens
+            inner.classList.toggle('is-flipped');
+            if(inner.classList.contains('is-flipped')){
+                inner.style.transform = "rotateY(180deg)";
+            } else {
+                inner.style.transform = "rotateY(0deg)";
+            }
+        }
+    });
+});
+
+// Scroll Animation Logic journey
+const timelineItems = document.querySelectorAll('.timeline-item');
+
+const showItems = () => {
+    const triggerBottom = window.innerHeight / 5 * 4;
+    
+    timelineItems.forEach(item => {
+        const itemTop = item.getBoundingClientRect().top;
+        
+        if(itemTop < triggerBottom) {
+            item.classList.add('visible');
+        }
+    });
+};
+
+window.addEventListener('scroll', showItems);
+// Initial check
+showItems();
+
+// Function to toggle Answer
+function toggleFaq(element) {
+    const card = element.parentElement;
+    card.classList.toggle('open');
+}
+
+// Function to search Questions
+function faqSearchLogic() {
+    let input = document.getElementById('faqInput').value.toLowerCase();
+    let cards = document.querySelectorAll('.faq-card');
+
+    cards.forEach(card => {
+        let questionText = card.querySelector('h3').innerText.toLowerCase();
+        if (questionText.includes(input)) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+    });
+}
