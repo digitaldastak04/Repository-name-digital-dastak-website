@@ -1769,6 +1769,60 @@ body { background-color: var(--dark-bg); font-family: 'Poppins', sans-serif; col
     z-index: -1;
     animation: wa-pulse 2s infinite;
 }
+.whatsapp-pro-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    text-decoration: none;
+    z-index: 9999;
+}
+
+.chat-content {
+    display: flex;
+    align-items: center;
+    background-color: #1a1a2e; /* Dark theme match */
+    padding: 8px 8px 8px 20px;
+    border-radius: 50px;
+    border: 2px solid #ff7300; /* Aapka Orange color */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.chat-text {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 12px;
+}
+
+.icon-circle {
+    background-color: #ff7300; /* Orange background for icon */
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effects */
+.whatsapp-pro-btn:hover .chat-content {
+    background-color: #ff7300;
+    border-color: white;
+}
+
+.whatsapp-pro-btn:hover .chat-text {
+    color: white;
+}
+
+.whatsapp-pro-btn:hover .icon-circle {
+    background-color: white;
+    color: #ff7300;
+    transform: rotate(360deg);
+}
 
 @keyframes wa-pulse {
     0% { transform: scale(1); opacity: 0.6; }
