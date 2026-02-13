@@ -1888,6 +1888,7 @@ body { background-color: var(--dark-bg); font-family: 'Poppins', sans-serif; col
     margin-bottom: 20px;
     background: linear-gradient(180deg, #f8c14d 0%, #f97d31 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: -2px;
 }
@@ -2215,6 +2216,7 @@ p { color: #d1d5db; line-height: 1.6; font-size: 15px; }
     font-weight: 800;
     background: linear-gradient(to right, #22d3ee, #818cf8);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
