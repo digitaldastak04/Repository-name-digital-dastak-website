@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Total slides count set karna (agar dynamic ho)
     // Agar fix 15 hain toh HTML mein 15 likha rehne dein
     if (totalIdxElement) {
-        totalIdxElement.textContent = "16"; 
+        totalIdxElement.textContent = "17"; 
     }
 
     swiperMain.on('slideChange', function () {

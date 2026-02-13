@@ -288,21 +288,22 @@
 
         <div class="contact-form">
             <h4>Quick Message</h4>
-            <form>
-                <div class="input-group">
-                    <input type="text" placeholder="Your Name" required>
-                </div>
-                <div class="input-group">
-                    <input type="text" placeholder="Your Phone" required>
-                </div>
-                <div class="input-group">
-                    <input type="email" placeholder="Your Email" required>
-                </div>
-                <textarea placeholder="Your Message" rows="4" required></textarea>
-                <button type="submit" class="send-btn">
-                    <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
-                </button>
-            </form>
+             <form action="https://formspree.io/f/xvzbggkr" method="POST">
+    <div class="input-group">
+        <input type="text" name="Name" placeholder="Your Name" required>
+    </div>
+    <div class="input-group">
+        <input type="text" name="Phone" placeholder="Your Phone" required>
+    </div>
+    <div class="input-group">
+        <input type="email" name="Email" placeholder="Your Email" required>
+    </div>
+    <textarea name="Message" placeholder="Your Message" rows="4" required></textarea>
+    
+    <button type="submit" class="send-btn">
+        <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+    </button>
+</form>
         </div>
     </div>
 </section>
