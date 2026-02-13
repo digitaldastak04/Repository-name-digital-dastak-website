@@ -427,3 +427,73 @@ function faqSearchLogic() {
         }
     });
 }
+
+/* Our Web Development  */
+document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll('.service-card');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
+            }
+        });
+    }, { threshold: 0.1 });
+
+    cards.forEach(card => {
+        // Initial inline styles for JS animation
+        card.style.opacity = "0.5"; 
+        card.style.transform = "translateY(10px)";
+        card.style.transition = "all 0.6s ease-out";
+        observer.observe(card);
+    });
+});
+
+
+/* Our Development Process */
+document.addEventListener("DOMContentLoaded", () => {
+    const pCards = document.querySelectorAll('.process-card');
+    
+    const processObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.style.opacity = "1";
+                    entry.target.style.transform = "translateY(0)";
+                }, index * 150);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    pCards.forEach(card => {
+        // Initial state for animation
+        card.style.opacity = "0.3";
+        card.style.transform = "translateY(30px)";
+        card.style.transition = "all 0.7s ease-out";
+        processObserver.observe(card);
+    });
+});
+
+/*Technologies We Use*/
+document.addEventListener("DOMContentLoaded", () => {
+    const items = document.querySelectorAll('.tech-item');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.style.opacity = "1";
+                    entry.target.style.transform = "translateY(0)";
+                }, index * 50); // Fast staggered entry
+            }
+        });
+    }, { threshold: 0.1 });
+
+    items.forEach(item => {
+        item.style.opacity = "0";
+        item.style.transform = "translateY(20px)";
+        item.style.transition = "all 0.5s ease-out";
+        observer.observe(item);
+    });
+});
